@@ -1,17 +1,27 @@
 package Assignment_1;
 
-public class BagInterface {
+public interface BagInterface<T>{
    
-    public T union(){
+   public Bag<T> intersection(Bag<T> bag2);
 
-   }
+   public Bag<T> union(Bag<T> bag2);
 
-   public T intersection(){
+   public Bag<T> difference(Bag<T> bag2);
 
-   }
+   public boolean isEmpty();
 
-   public T differnece(){
+   public boolean add(T anEntry);
+
+   public T remove();
+
+   public boolean remove(T anEntry);
+
+   public int getCurrentSize();
+
+   public int getFrequencyOf(T anEntry);
+
+   public boolean contains(T anEntry);
+
+   public T[] toArray();
     
-   }
-
 }
